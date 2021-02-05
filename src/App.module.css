@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  line-height: .9;
+  /* color: rgb(204, 5, 5); */
+}
+
+@import-normalize;
+h1 {
+  position: relative;
+  display: inline-block;
+}
+
+h1::before, h1::after {
+  content: ' ';
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+h1::before {
+  background: red;
+  width: 100vw;
+  transform: translate(-50%);
+  left: 50%;
+  z-index: -2;
+}
+
+h1::after {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  z-index: -1;
+  left: -.1em;
+  right: -.1em;
+  left: -2px;
+  /*add margin left*/
+  right: -2px;
+  /*add margin right*/
+}
+
+.container {
+  /* align-items: center; */
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+
+.card>img {
+  transition: opacity 250ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.card:hover>.content {
+  opacity: 1;
+}
+
+.card:hover img {
+  opacity: 0.4;
+  transform: scale(1.1);
+}
+
+.content {
+  transition: opacity 200ms ease-in-out;
+  align-items: center;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card::before, .card::after {
+  content: '';
+  position: absolute;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+  opacity: 1;
+  transition: transform ease-out 250ms;
+}
+
+.card::before {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: scale(0, 1);
+}
+
+.card::after {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transform: scale(1, 0);
+}
+
+.card:hover::before {
+  transform: scale(1.05, 1);
+}
+
+.card:hover::after {
+  transform: scale(1, 1.05);
+}
