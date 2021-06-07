@@ -1,31 +1,54 @@
-import style from './App.module.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className={style.App}>
-      <div>
-        <h1>THIS IS A TITLE</h1>
+    <Router>
+      <div className={styles.App}>
+      <nav className={styles.nav}>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      
       </div>
-      <div className={style.container}>
-        <div className={style.card}>
-          <img src="//unsplash.it/400/400" alt="" />
-          <div className={style.content}>
-            <h3 className={style.title}>This is a card</h3>
-            <p className={style.body}> body of the card</p>
-          </div>
-        </div>
-        <div className={style.card}>
-          <img src="//unsplash.it/401/401" alt="" />
-          <div className={style.content}>
-            <h3 className={style.title}>This is a card</h3>
-            <p className={style.body}> body of the card</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
+    </Router>
   );
 }
 
 export default App;
+function Home() {
+  return <h2>Home</h2>;
+}
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
+}
