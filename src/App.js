@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import PseudoClasses from './pages/pseudo_classes/PseudoClasses'
 import styles from './App.module.scss';
 
 function App() {
@@ -16,19 +17,16 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
+              <Link to="/pseudo_clases">Pseudo Clases</Link>
+            </li>           
           </ul>
         </nav>
         <Switch>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/pseudo_clases">
+            <PseudoClasses />
           </Route>
           <Route path="/">
             <Home />

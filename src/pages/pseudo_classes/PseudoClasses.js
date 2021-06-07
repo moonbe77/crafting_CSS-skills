@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './pseudo_classes.module.sass';
+import styles from './pseudo_classes.module.scss';
 
 function PseudoClasses(props) {
   return (
