@@ -1,4 +1,4 @@
-[logo]: https://bmunz.dev/figma/bmunz.svg "logo bmunz.dev"
+[![logo](https://bmunz.dev/figma/bmunz.svg "logo bmunz.dev")](https://bmunz.dev "Portfolio")
 # Crafting CSS Skills 
 [Link to the page](https://moonbe77.github.io/crafting_CSS-skills/)
 ## CSS repository to improve and practice my css skills 
@@ -13,5 +13,7 @@
 ---
 
 ## About ME [🔗](https://bmunz.dev "Portfolio")
- ### I'am a web developer focused on front-end for the time being but with passion for coding, my goal is to become a full stack engineer and a software architect after that.
- ### My dream is to create software that helps people to have a better life.
+ 
+ #### I'am a web developer passionate about coding, eager to learn and improve constantly, focused on front-end for the time being. My goal is to become a full stack engineer.
+ 
+ #### My dream is to create software that helps people to have better life.
