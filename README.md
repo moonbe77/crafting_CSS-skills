@@ -1,6 +1,11 @@
-# CSS_POLISH
-## a css repo to polish my css skills
+# Crafting CSS Skills
 
-### also the idea is to collect here ideas and POC made by my self
+## CSS repository to polish my css skills 
 
- #### I'll add a link after deploy it.
+### also to collect here ideas and POC
+
+   * CSS Animations 
+   * CSS layouts
+   * CSS prove of concepts
+ 
+
