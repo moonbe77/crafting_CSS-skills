@@ -17,3 +17,9 @@
  #### I'am a web developer passionate about coding, eager to learn and improve constantly, focused on front-end for the time being. My goal is to become a full stack engineer.
  
  #### My dream is to create software that helps people to have better life.
+
+ ---
+ ### Deploy to GH-pages
+  ```
+  npm run deploy
+  ```
